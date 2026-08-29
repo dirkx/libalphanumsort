@@ -55,10 +55,6 @@ int alphanumsort(const void * A, const void * B) {
 		if (ia != ib)
 			return ia - ib;
 
-		// If one of them is shorter; that one wins.
-		if (!*a || !*b)
-			return *b ? -1 : 1;
-
 		// number is the same - so continue the comparison
 	};
 	return 0; // no reached.
