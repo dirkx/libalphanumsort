@@ -21,7 +21,7 @@ This replacement for strmcmp() that can be used with libc its qsort/heapsort/mer
 
 It will take numbers before alpha; and ignore leading 0. So, for example:
 
-	foo.012
+	foo.0009
 	foo.7
 	foo.70
 	33.foo
@@ -33,6 +33,6 @@ Is sorted as
 	03.foo
 	33.foo
 	foo.8
-	foo.012
+	foo.0009
 	foo.70
 
