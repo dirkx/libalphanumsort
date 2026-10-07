@@ -42,9 +42,9 @@ int alphanumsort(const void * A, const void * B) {
 
 		// Digits are lexially ordered before letters.
 		//
-		if (isdigit(*a))
+		if (!isdigit(*a))
 			return -1;
-		if (isdigit(*b))
+		if (!isdigit(*b))
 			return 1;
 
 		// We are at the start of a number; parse -all- of it
@@ -59,4 +59,3 @@ int alphanumsort(const void * A, const void * B) {
 	};
 	return 0; // no reached.
 }
-
